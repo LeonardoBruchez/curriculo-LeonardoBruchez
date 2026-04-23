@@ -14,7 +14,6 @@
 | **Idioma** | Inglês - Intermediário |
 | **Status** | ✅ Disponível para estágio |
 | **LinkedIn** | [linkedin.com/in/leonardo-bruchez-280635356/](https://www.linkedin.com/in/leonardo-bruchez-280635356/) |
-| **GitHub** | [github.com/LeonardoBruchez](https://github.com/LeonardoBruchez) |
 
 ---
 
@@ -73,7 +72,6 @@ Edição de imagens com Photoshop e GIMP, com ajustes de cor, recorte e manipula
 |-------|------------|------|
 | Trilha Fullstack | Rocketseat | Abril/2025 |
 | Curso HTML e CSS (Módulos 1-3) | Curso em Vídeo | Abril/2025 |
-| Introduction to Cybersecurity | Cisco | Março/2025 |
 
 ---
 
@@ -118,7 +116,6 @@ Edição de imagens com Photoshop e GIMP, com ajustes de cor, recorte e manipula
 
 - [Abrir currículo em HTML](./index.html) - Versão completa com estilos
 - [LinkedIn](https://www.linkedin.com/in/leonardo-bruchez-280635356/)
-- [GitHub](https://github.com/LeonardoBruchez)
 
 ---
 
