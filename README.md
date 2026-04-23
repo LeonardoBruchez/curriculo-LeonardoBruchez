@@ -2,6 +2,29 @@
 
 > 📄 **Nota:** Este README é uma cópia estruturada do arquivo `index.html`. Você pode visualizar a versão completa com estilos abrindo o arquivo `index.html` em seu navegador.
 
+## 📌 Sobre Este Repositório
+
+Este projeto apresenta meu currículo em duas formas:
+
+- **Visual (com estilo):** arquivo `index.html`
+- **Texto estruturado:** este `README.md`
+
+Ambos possuem o mesmo conteúdo principal, para facilitar leitura rápida no GitHub e visualização completa no navegador.
+
+## 🚀 Como Visualizar
+
+1. Clone ou baixe este repositório.
+2. Abra o arquivo `index.html` em qualquer navegador moderno.
+3. Para versão em texto, leia este `README.md`.
+
+## 🌍 Publicação (Opcional)
+
+Para um fluxo mais profissional, este currículo pode ser publicado gratuitamente com:
+
+- **GitHub Pages**
+- **Netlify**
+- **Vercel**
+
 ---
 
 ## 👤 Informações Pessoais
