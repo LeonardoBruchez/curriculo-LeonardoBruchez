@@ -16,22 +16,13 @@ Ambos possuem o mesmo conteúdo principal, para facilitar leitura rápida no Git
 1. Clone ou baixe este repositório.
 2. Abra o arquivo `index.html` em qualquer navegador moderno.
 3. Para versão em texto, leia este `README.md`.
-
-## 🌍 Publicação (Opcional)
-
-Para um fluxo mais profissional, este currículo pode ser publicado gratuitamente com:
-
-- **GitHub Pages**
-- **Netlify**
-- **Vercel**
-
+4. 
 ---
 
 ## 👤 Informações Pessoais
 
 | Campo | Informação |
 |-------|-----------|
-| **Idade** | 20 anos |
 | **Email** | bruchezleonardo@gmail.com |
 | **Localização** | São José - SC |
 | **Idioma** | Inglês - Intermediário |
