@@ -16,113 +16,131 @@ Ambos possuem o mesmo conteúdo principal, para facilitar leitura rápida no Git
 1. Clone ou baixe este repositório.
 2. Abra o arquivo `index.html` em qualquer navegador moderno.
 3. Para versão em texto, leia este `README.md`.
-4. 
+4.
+
 ---
 
 ## 👤 Informações Pessoais
 
-| Campo | Informação |
-|-------|-----------|
-| **Email** | bruchezleonardo@gmail.com |
-| **Localização** | São José - SC |
-| **Idioma** | Inglês - Intermediário |
-| **Status** | ✅ Disponível para estágio |
-| **LinkedIn** | [linkedin.com/in/leonardo-bruchez-280635356/](https://www.linkedin.com/in/leonardo-bruchez-280635356/) |
+| Campo           | Informação                                                                                             |
+| --------------- | ------------------------------------------------------------------------------------------------------ |
+| **Email**       | leonardobruchez.code@gmail.com                                                                         |
+| **Localização** | São José - SC                                                                                          |
+| **Idioma**      | Inglês - Intermediário                                                                                 |
+| **Status**      | ✅ Disponível para estágio                                                                             |
+| **LinkedIn**    | [linkedin.com/in/leonardo-bruchez-280635356/](https://www.linkedin.com/in/leonardo-bruchez-280635356/) |
 
 ---
 
 ## 🎯 Destaques Principais
 
 - 🌐 **Desenvolvimento Web** (HTML5, CSS3, JavaScript, Node.js)
-- 💼 **Estágio em Tecnologia** 
+- 💼 **Estágio em Tecnologia**
 - 🚀 Evolução para **Dados e Nuvem**
 
 ---
 
 ## 📝 Perfil Profissional
 
-Estudante de Análise e Desenvolvimento de Sistemas em busca de estágio. Tenho foco atual em **Desenvolvimento Web** (HTML5, CSS3, JavaScript e Node.js), com boas práticas de código e segurança. Sou proativo, comprometido e orientado a resultados.
+Profissional de 20 anos, estudante de Análise e Desenvolvimento de Sistemas em busca de estágio. Tenho foco atual em Desenvolvimento Web (HTML5, CSS3, JavaScript e Node.js), com boas práticas de código e segurança. Atualmente estou no aprendizado de React, com foco em React Router. Trago vivência em manutenção de aeronaves (aviônicos), o que reforça minha disciplina, capacidade de diagnóstico e soft skills em ambientes críticos.
 
 ---
 
 ## 🎯 Objetivos Profissionais
 
-Atuar em estágio em **Desenvolvimento Web**, contribuindo com interfaces modernas, código limpo e segurança. Como próximo passo de carreira, evoluir para **Dados e Nuvem**.
+Atuar em estágio em Desenvolvimento Web, contribuindo com interfaces modernas, código limpo e segurança. Como próximo passo de carreira, evoluir para Dados e Nuvem.
+
+---
+
+## ✈️ Experiência e Formação Técnica (Aviônicos)
+
+### Formação Técnica em Aviônicos - SENAI Palhoça
+
+**Curso Técnico | Concluído**
+Formado em curso técnico com prática em hangar, atuando na manutenção de eletrônicos embarcados e instrumentos de voo. Diagnóstico de circuitos lógicos, barramentos de dados e sistemas de navegação/comunicação.
+
+### Experiência Prática - Aeroclube Costa Esmeralda
+
+**Manutenção em hangar | Concluído**
+Vivência prática em manutenção de aeronaves, com apoio em inspeções e rotinas de hangar.
+
+### Destaque Operacional - AMC 2024 (Azul Linhas aéreas)
+
+**Aerospace Maintenance Competition | Concluído**
+Suporte a equipe de elite da Azul Linhas aéreas em 2024, com foco em agilidade, precisão e resiliência sob pressão.
 
 ---
 
 ## 💼 Experiências Profissionais
 
-### 🔧 Desenvolvedor Web (WordPress)
-**Belport, São José** | Janeiro/2025 - Abril/2025
+### 💻 Desenvolvedor Web (WordPress)
 
+**Belport, São José** | Janeiro/2025 - Abril/2025 | **Concluído**
 Desenvolvimento e manutenção de site institucional em WordPress, com portfólio digital para apresentação de projetos e serviços.
 
 ### 🎬 Editor de Vídeo (Freelance)
-**São José** | Janeiro/2023 - Janeiro/2025
 
-Edição e pós-produção de vídeos com Sony Vegas Pro, incluindo highlights, cortes, trilha sonora e exportação. Suporte com Filmora e After Effects.
+**São José** | Janeiro/2023 - Janeiro/2025 | **Concluído**
+Edição e pós-produção de vídeos com Sony Vegas Pro, incluindo highlights, cortes, trilha sonora e exportação.
 
 ### 📸 Editor de Fotos (Freelance)
-**São José** | Janeiro/2020 - Janeiro/2022
 
-Edição de imagens com Photoshop e GIMP, com ajustes de cor, recorte e manipulação de camadas para composições visuais.
+**São José** | Janeiro/2020 - Janeiro/2022 | **Concluído**
+Edição de imagens com Photoshop e GIMP, com ajustes de cor, recorte e manipulação de camadas.
+
+### 🤝 Projeto Inclusão Digital - Monitoria
+
+**Participando atualmente** | **Atual**
+Apoio em atividades de inclusão digital, com orientações e acompanhamento de participantes.
 
 ---
 
 ## 🎓 Formação Acadêmica
 
-### Graduação
-**Análise e Desenvolvimento de Sistemas**
-- Instituição: Centro Universitário Estácio de Santa Catarina - São José
-- Período: 1º semestre
-- Turno: Noite
+### Graduação: Análise e Desenvolvimento de Sistemas
+
+- **Instituição:** Centro Universitário Estácio de Santa Catarina - São José
+- **Status:** Cursando (1º período, Noite)
+
+### Curso Técnico: Manutenção de Aeronaves (Aviônicos)
+
+- **Instituição:** SENAI Palhoça
+- **Status:** Concluído
 
 ---
 
-## 📚 Cursos
+## 📚 Cursos e Treinamentos
 
-| Curso | Instituição | Data |
-|-------|------------|------|
-| Trilha Fullstack | Rocketseat | Abril/2025 |
-| Curso HTML e CSS (Módulos 1-3) | Curso em Vídeo | Abril/2025 |
-
----
-
-## 🏆 Certificações
-
-- 🔐 **Introduction to Cybersecurity** (Cisco) - Mar/2026
-- 🚀 **Fullstack** (Rocketseat) - Mar/2026
-- 💻 **Introdução ao Node.js** (Rocketseat) - Fev/2026
-- 🎯 **JavaScript** (Rocketseat) - Jan/2026
-- 📖 **Curso de JavaScript e ECMAScript** (Curso em Vídeo) - Nov/2025
-- 🤖 **Imersão IA** (Alura) - Out/2025
-- 🌐 **Fundamentos de HTML e CSS** (Rocketseat) - Set/2025
-- 📦 **Git e GitHub** (Rocketseat) - Jun/2025
-- 🎓 **Missão IA** (Rocketseat) - Jun/2025
-- 🔙 **Imersão Dev Back-End** (Alura) - Jan/2025
-- ⚙️ **Lógica de Programação com JavaScript** (Alura) - Nov/2024
+- Introduction to Cybersecurity (Cisco) - Mar/2026
+- Fullstack (Rocketseat) - Mar/2026
+- Introdução ao Node.js (Rocketseat) - Fev/2026
+- JavaScript (Rocketseat) - Jan/2026
+- Curso de JavaScript e ECMAScript (Curso em Vídeo) - Nov/2025
+- Imersão IA (Alura) - Out/2025
+- Fundamentos de HTML e CSS (Rocketseat) - Set/2025
+- Git e GitHub (Rocketseat) - Jun/2025
+- Missão IA (Rocketseat) - Jun/2025
+- Imersão Dev Back-End (Alura) - Jan/2025
+- Lógica de Programação com JavaScript (Alura) - Nov/2024
 
 ---
 
 ## 📋 Informações Adicionais
 
-### Interesses Profissionais
-- Arquitetura de sistemas
-- Segurança cibernética
-- Desenvolvimento Backend
-- Desenvolvimento Frontend
-- Redes de computadores
+### Interesses e Habilidades
 
-### Habilidades & Experiências
-- ✅ Inglês técnico médio para leitura de documentação
-- ✅ Experiência com **VS Code**
-- ✅ Experiência com **Git e GitHub**
-- ✅ Perfil autodidata com foco em resolução de problemas
-- ✅ Interesse em Cloud Computing (AWS/Azure)
-- ✅ Entusiasta de hardware e otimização de sistemas
-- ✅ Interesse em tecnologias emergentes
-- ✅ Conhecimento básico de **Jupyter Notebook** integrado com IA
+- Interesse em arquitetura de sistemas, segurança cibernética, backend, frontend e redes.
+- Atualmente focado em Front-end, acompanhando o processo completo: estrutura com HTML, estilo com CSS, interatividade com JavaScript e evolução para React.
+- Entusiasta de hardware e otimização de sistemas.
+- Inglês técnico médio para leitura de documentação.
+- Experiência com VS Code, Git e GitHub.
+- Perfil autodidata com foco em resolução de problemas.
+- Interesse em Cloud Computing (AWS/Azure) e tecnologias emergentes.
+- Conhecimento básico de Jupyter Notebook integrado com IA.
+- Rotina com documentação técnica e checklists de qualidade.
+- Raciocínio lógico forte para diagnóstico de falhas.
+- Boa comunicação para suporte e orientação de usuários.
+- Organização e responsabilidade com sistemas críticos.
 
 ---
 
@@ -133,6 +151,6 @@ Edição de imagens com Photoshop e GIMP, com ajustes de cor, recorte e manipula
 
 ---
 
-**Última atualização:** 23 de abril de 2026
+**Última atualização:** 10 de maio de 2026
 
-*Este arquivo é mantido sincronizado com o currículo em HTML. Para atualizações, acesse o `index.html`.*
+_Este arquivo é mantido sincronizado com o currículo em HTML. Para atualizações, acesse o `index.html`._
