@@ -81,21 +81,29 @@
       }
 
       .hero {
-        padding: 1.6rem 1.7rem 1rem;
+        padding: 1.7rem 1.7rem 1.35rem;
         border-bottom: 1px solid var(--line);
+        display: grid;
+        grid-template-columns: 1.35fr 0.85fr;
+        gap: 1.2rem;
+        align-items: stretch;
         background: linear-gradient(
           120deg,
-          rgba(11, 107, 80, 0.12),
-          rgba(15, 75, 140, 0.1) 55%,
-          rgba(255, 255, 255, 0.5)
+          rgba(11, 107, 80, 0.14),
+          rgba(15, 75, 140, 0.12) 55%,
+          rgba(255, 255, 255, 0.65)
         );
       }
 
-      .hero-top {
-        display: grid;
-        grid-template-columns: 1.2fr auto;
-        gap: 1rem;
-        align-items: start;
+      .hero-left {
+        display: flex;
+        flex-direction: column;
+        gap: 0.3rem;
+      }
+
+      .hero-right {
+        display: flex;
+        align-items: stretch;
       }
 
       h1 {
@@ -134,11 +142,18 @@
         padding: 0.26rem 0.52rem;
       }
 
+      .contact-panel {
+        border-radius: 18px;
+        border: 1px solid rgba(15, 23, 42, 0.12);
+        background: rgba(255, 255, 255, 0.82);
+        padding: 0.7rem 0.75rem;
+        width: 100%;
+        box-shadow: 0 10px 22px rgba(15, 23, 42, 0.1);
+      }
+
       .contact-grid {
-        margin-top: 0.8rem;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.35rem;
+        display: grid;
+        gap: 0.45rem;
         font-size: 0.82rem;
         color: #1f2937;
       }
@@ -159,7 +174,7 @@
       }
 
       .social-links {
-        margin-top: 0.8rem;
+        margin-top: 0.7rem;
         display: flex;
         flex-wrap: wrap;
         gap: 0.45rem;
@@ -213,21 +228,21 @@
 
       .content {
         display: grid;
-        grid-template-columns: 1.2fr 0.8fr;
+        grid-template-columns: 0.9fr 1.4fr;
         gap: 0;
       }
 
-      .left,
-      .right {
-        padding: 1rem 1.35rem 1.35rem;
+      .sidebar,
+      .main {
+        padding: 1.1rem 1.4rem 1.4rem;
       }
 
-      .right {
-        border-left: 1px solid var(--line);
+      .sidebar {
+        border-right: 1px solid var(--line);
         background: linear-gradient(
           180deg,
-          rgba(255, 255, 255, 0.34),
-          rgba(255, 255, 255, 0.64)
+          rgba(255, 255, 255, 0.58),
+          rgba(255, 255, 255, 0.92)
         );
       }
 
@@ -288,6 +303,38 @@
         font-size: 0.74rem;
         font-weight: 500;
         color: #334155;
+      }
+
+      .meta-row {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 0.45rem;
+      }
+
+      .status {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.25rem;
+        padding: 0.18rem 0.45rem;
+        border-radius: 999px;
+        font-size: 0.64rem;
+        font-weight: 700;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        border: 1px solid transparent;
+      }
+
+      .status.current {
+        color: #0b5d3a;
+        background: rgba(11, 107, 80, 0.14);
+        border-color: rgba(11, 107, 80, 0.32);
+      }
+
+      .status.done {
+        color: #1f3a8a;
+        background: rgba(37, 99, 235, 0.12);
+        border-color: rgba(37, 99, 235, 0.3);
       }
 
       .desc {
@@ -378,21 +425,13 @@
           grid-template-columns: 1fr;
         }
 
-        .right {
-          border-left: none;
-          border-top: 1px solid var(--line);
+        .sidebar {
+          border-right: none;
+          border-bottom: 1px solid var(--line);
         }
 
-        .hero-top {
+        .hero {
           grid-template-columns: 1fr;
-        }
-
-        .age-badge {
-          justify-self: start;
-        }
-
-        .contact-grid {
-          margin-top: 0.85rem;
         }
       }
 
@@ -465,7 +504,7 @@
         }
 
         .hero,
-        .right {
+        .sidebar {
           background: transparent;
         }
 
@@ -477,7 +516,8 @@
             rgba(184, 209, 235, 0.2),
             rgba(203, 230, 218, 0.16)
           );
-          padding: 0.62rem 0.76rem 0.36rem;
+          padding: 0.62rem 0.76rem 0.5rem;
+          grid-template-columns: 1.2fr 0.8fr;
         }
 
         h1 {
@@ -490,18 +530,18 @@
         }
 
         .content {
-          grid-template-columns: 1.24fr 0.76fr;
+          grid-template-columns: 0.92fr 1.28fr;
           align-items: start;
         }
 
-        .left,
-        .right {
+        .sidebar,
+        .main {
           padding: 0.38rem 0.7rem 0.5rem;
         }
 
-        .right {
-          border-left: 1px solid #c1cfdf;
-          border-top: none;
+        .sidebar {
+          border-right: 1px solid #c1cfdf;
+          border-bottom: none;
           margin-top: 0;
           background: linear-gradient(
             180deg,
@@ -550,6 +590,11 @@
           font-size: 0.61rem;
         }
 
+        .status {
+          font-size: 0.56rem;
+          padding: 0.12rem 0.36rem;
+        }
+
         .desc {
           font-size: 0.67rem;
           line-height: 1.12;
@@ -575,21 +620,21 @@
           margin-top: 0.06rem;
         }
 
-        .right .section {
+        .sidebar .section {
           margin-bottom: 0.2rem;
         }
 
-        .right .section h2 {
+        .sidebar .section h2 {
           margin-bottom: 0.26rem;
         }
 
-        .right .list {
+        .sidebar .list {
           font-size: 0.68rem;
           line-height: 1.12;
           padding-left: 0.75rem;
         }
 
-        .right .list li + li {
+        .sidebar .list li + li {
           margin-top: 0.03rem;
         }
 
@@ -654,14 +699,18 @@
           gap: 0.25rem;
         }
 
+        .contact-grid {
+          gap: 0.25rem;
+        }
+
+        .contact-panel {
+          padding: 0.4rem 0.46rem;
+          box-shadow: none;
+        }
+
         .contact-chip {
           padding: 0.2rem 0.42rem;
           font-size: 0.7rem;
-        }
-
-        .age-badge {
-          padding: 0.3rem 0.55rem;
-          font-size: 0.72rem;
         }
       }
     </style>
@@ -669,62 +718,65 @@
   <body>
     <main class="resume">
       <header class="hero">
-        <div class="hero-top">
-          <div>
-            <h1>Leonardo Cassiano Bruchez Pereira</h1>
-            <p class="tagline">
-              Estudante de Análise e Desenvolvimento de Sistemas em busca de
-              estágio, com foco atual em Desenvolvimento Web e evolução para
-              Dados e Nuvem.
-            </p>
-            <div class="headline-badges">
-              <span class="headline-badge">Estágio em Tecnologia</span>
-              <span class="headline-badge">Desenvolvimento Web</span>
-              <span class="headline-badge">Dados e Nuvem</span>
+        <div class="hero-left">
+          <h1>Leonardo Cassiano Bruchez Pereira</h1>
+          <p class="tagline">
+            Estudante de Análise e Desenvolvimento de Sistemas em busca de
+            estágio, com foco atual em Desenvolvimento Web e evolução para Dados
+            e Nuvem.
+          </p>
+          <div class="headline-badges">
+            <span class="headline-badge">Estágio em Tecnologia</span>
+            <span class="headline-badge">Desenvolvimento Web</span>
+            <span class="headline-badge">Dados e Nuvem</span>
+          </div>
+          <div class="social-links">
+            <a
+              class="social-btn linkedin"
+              href="https://www.linkedin.com/in/leonardo-bruchez-280635356/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >LinkedIn</a
+            >
+            <a
+              class="social-btn github"
+              href="https://github.com/LeonardoBruchez"
+              target="_blank"
+              rel="noopener noreferrer"
+              >GitHub</a
+            >
+          </div>
+        </div>
+        <div class="hero-right">
+          <div class="contact-panel">
+            <div class="contact-grid">
+              <div class="contact-chip">
+                <strong>Email:</strong> leonardobruchez.code@gmail.com
+              </div>
+              <div class="contact-chip">
+                <strong>Localização:</strong> São José - SC
+              </div>
+              <div class="contact-chip">
+                <strong>Idioma:</strong> Inglês - Intermediário
+              </div>
+              <div class="contact-chip">
+                <strong>Status:</strong> Disponível para estágio
+              </div>
             </div>
           </div>
-        </div>
-        <div class="contact-grid">
-          <div class="contact-chip">
-            <strong>Email:</strong> bruchezleonardo@gmail.com
-          </div>
-          <div class="contact-chip">
-            <strong>Localização:</strong> São José - SC
-          </div>
-          <div class="contact-chip">
-            <strong>Idioma:</strong> Inglês - Intermediário
-          </div>
-          <div class="contact-chip">
-            <strong>Status:</strong> Disponível para estágio
-          </div>
-        </div>
-        <div class="social-links">
-          <a
-            class="social-btn linkedin"
-            href="https://www.linkedin.com/in/leonardo-bruchez-280635356/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >LinkedIn</a
-          >
-          <a
-            class="social-btn github"
-            href="https://github.com/LeonardoBruchez"
-            target="_blank"
-            rel="noopener noreferrer"
-            >GitHub</a
-          >
         </div>
       </header>
 
       <section class="content">
-        <div class="left">
+        <aside class="sidebar">
           <article class="section">
             <h2>Perfil Profissional</h2>
             <p>
               Profissional de 20 anos, estudante de Análise e Desenvolvimento de
               Sistemas em busca de estágio. Tenho foco atual em Desenvolvimento
               Web (HTML5, CSS3, JavaScript e Node.js), com boas práticas de
-              código e segurança. Trago vivência em manutenção de aeronaves
+              código e segurança. Atualmente estou no aprendizado de React, com
+              foco em React Router. Trago vivência em manutenção de aeronaves
               (aviônicos), o que reforça minha disciplina, capacidade de
               diagnóstico e soft skills em ambientes críticos.
             </p>
@@ -740,135 +792,30 @@
           </article>
 
           <article class="section">
-            <h2>Experiência e Formação Técnica (Aviônicos)</h2>
-            <div class="timeline">
-              <div class="item">
-                <h3>Formação Técnica em Aviônicos - SENAI Palhoça</h3>
-                <div class="meta">
-                  Curso Técnico em Aviônicos | Manutenção de Aeronaves
-                </div>
-                <p class="desc">
-                  Formado em curso técnico com prática em hangar, atuando na
-                  manutenção de eletrônicos embarcados e instrumentos de voo.
-                </p>
-              </div>
-
-              <div class="item">
-                <h3>Troubleshooting e Sistemas Digitais</h3>
-                <div class="meta">Circuitos, barramentos e glass cockpit</div>
-                <p class="desc">
-                  Diagnóstico de circuitos lógicos, barramentos de dados e
-                  sistemas de navegação/comunicação; manutenção de displays
-                  integrados.
-                </p>
-              </div>
-
-              <div class="item">
-                <h3>Qualidade e Conformidade</h3>
-                <div class="meta">Documentação técnica | ANAC</div>
-                <p class="desc">
-                  Leitura de AMM/WDM/TSM em inglês e aderência a normas,
-                  reforcando disciplina e precisao.
-                </p>
-              </div>
-
-              <div class="item">
-                <h3>Documentação de Manutenção</h3>
-                <div class="meta">Registros pós-serviço</div>
-                <p class="desc">
-                  Experiencia com preenchimento de documentação de manutenção
-                  apos intervenções em aeronaves, seguindo padrões exigidos em
-                  hangar.
-                </p>
-              </div>
-
-              <div class="item">
-                <h3>Destaque Operacional - AMC 2024 (Azul)</h3>
-                <div class="meta">Aerospace Maintenance Competition</div>
-                <p class="desc">
-                  Suporte a equipe de elite da Azul em 2024, com foco em
-                  agilidade, precisao e resiliencia sob pressao.
-                </p>
-              </div>
-            </div>
-          </article>
-
-          <article class="section">
-            <h2>Experiências Profissionais</h2>
-            <div class="timeline">
-              <div class="item">
-                <h3>Desenvolvedor Web (WordPress) - Belport, São José</h3>
-                <div class="meta">Janeiro/2025 a Abril/2025</div>
-                <p class="desc">
-                  Desenvolvimento e manutenção de site institucional em
-                  WordPress, com portfólio digital para apresentação de projetos
-                  e serviços.
-                </p>
-              </div>
-
-              <div class="item">
-                <h3>Editor de Vídeo (Freelance) - São José</h3>
-                <div class="meta">Janeiro/2023 a Janeiro/2025</div>
-                <p class="desc">
-                  Edição e pós-produção de vídeos com Sony Vegas Pro, incluindo
-                  highlights, cortes, trilha sonora e exportação. Suporte com
-                  Filmora e After Effects.
-                </p>
-              </div>
-
-              <div class="item">
-                <h3>Editor de Fotos (Freelance) - São José</h3>
-                <div class="meta">Janeiro/2020 a Janeiro/2022</div>
-                <p class="desc">
-                  Edição de imagens com Photoshop e GIMP, com ajustes de cor,
-                  recorte e manipulação de camadas para composições visuais.
-                </p>
-              </div>
-            </div>
-          </article>
-
-          <article class="section">
-            <h2>Cursos</h2>
-            <div class="timeline">
-              <div class="item">
-                <h3>Rocketseat - Trilha Fullstack</h3>
-                <div class="meta">Abril/2025</div>
-                <p class="desc">
-                  Base em HTML5, CSS3, JavaScript, Node.js e SQL, com mais de
-                  1.100 aulas.
-                </p>
-              </div>
-              <div class="item">
-                <h3>Curso HTML e CSS - Curso em Vídeo</h3>
-                <div class="meta">Abril/2025</div>
-                <p class="desc">Módulos 1, 2 e 3 completos.</p>
-              </div>
-              <div class="item">
-                <h3>Introduction to Cybersecurity - Cisco</h3>
-                <div class="meta">Março/2025</div>
-                <p class="desc">
-                  Identificação de ameaças, vulnerabilidades e práticas de
-                  segurança digital.
-                </p>
-              </div>
-            </div>
-          </article>
-        </div>
-
-        <aside class="right">
-          <article class="section">
             <h2>Formação</h2>
             <div class="item">
               <h3>Graduação: Análise e Desenvolvimento de Sistemas</h3>
-              <div class="meta">
+              <div class="meta meta-row">
                 Centro Universitário Estácio de Santa Catarina - São José
+                <span class="status current">Atual</span>
               </div>
               <p class="desc">Período: 1º | Turno: Noite</p>
+            </div>
+            <div class="item">
+              <h3>Curso Técnico: Manutenção de Aeronaves (Aviônicos)</h3>
+              <div class="meta meta-row">
+                SENAI Palhoça
+                <span class="status done">Concluído</span>
+              </div>
+              <p class="desc">
+                Formação técnica voltada à manutenção de aeronaves e sistemas
+                aviônicos.
+              </p>
             </div>
           </article>
 
           <article class="section">
-            <h2>Certificações</h2>
+            <h2>Cursos e Treinamentos</h2>
             <ul class="list">
               <li>Introduction to Cybersecurity (Cisco) - Mar/2026</li>
               <li>Fullstack (Rocketseat) - Mar/2026</li>
@@ -891,7 +838,9 @@
             <ul class="list">
               <li>
                 Interesse em arquitetura de sistemas, segurança cibernética,
-                backend, frontend e redes
+                backend, frontend e redes. Atualmente focado em Front-end,
+                acompanhando o processo completo: estrutura com HTML, estilo com
+                CSS, interatividade com JavaScript e evolução para React.
               </li>
               <li>Entusiasta de hardware e otimização de sistemas</li>
               <li>Inglês técnico médio para leitura de documentação</li>
@@ -906,18 +855,123 @@
               <li>Raciocínio lógico forte para diagnóstico de falhas</li>
               <li>Boa comunicação para suporte e orientação de usuários</li>
               <li>Organização e responsabilidade com sistemas críticos</li>
-              <li>
-                Imersão MRO Azul (Campinas/VCP) em infraestrutura de manutenção
-              </li>
-              <li>
-                Auxiliar de Manutenção de Aeronaves no Hangar Costa Esmeralda
-              </li>
-              <li>
-                Projeto Inclusão Digital: monitoria, atualmente participando
-              </li>
             </ul>
           </article>
         </aside>
+
+        <div class="main">
+          <article class="section">
+            <h2>Experiência e Formação Técnica (Aviônicos)</h2>
+            <div class="timeline">
+              <div class="item">
+                <h3>Formação Técnica em Aviônicos - SENAI Palhoça</h3>
+                <div class="meta meta-row">
+                  Curso Técnico em Aviônicos | Manutenção de Aeronaves
+                  <span class="status done">Concluído</span>
+                </div>
+                <p class="desc">
+                  Formado em curso técnico com prática em hangar, atuando na
+                  manutenção de eletrônicos embarcados e instrumentos de voo.
+                  Diagnóstico de circuitos lógicos, barramentos de dados e
+                  sistemas de navegação/comunicação; manutenção de displays
+                  integrados. Experiência básica com circuitos integrados em
+                  aviônicos e testes de circuitos em protoboards.
+                </p>
+              </div>
+
+              <div class="item">
+                <h3>Experiência Prática - Aeroclube Costa Esmeralda</h3>
+                <div class="meta meta-row">
+                  Tijucas - SC | Manutenção em hangar
+                  <span class="status done">Concluído</span>
+                </div>
+                <p class="desc">
+                  Vivência prática em manutenção de aeronaves, com apoio em
+                  inspeções e rotinas de hangar.
+                </p>
+              </div>
+
+              <div class="item">
+                <h3>Qualidade e Conformidade</h3>
+                <div class="meta meta-row">
+                  Documentação técnica | ANAC
+                  <span class="status done">Concluído</span>
+                </div>
+                <p class="desc">
+                  Leitura de AMM/WDM/TSM em inglês e aderência a normas,
+                  reforçando disciplina e precisão.
+                </p>
+              </div>
+
+              <div class="item">
+                <h3>Destaque Operacional - AMC 2024 (Azul Linhas aéreas)</h3>
+                <div class="meta meta-row">
+                  Aerospace Maintenance Competition
+                  <span class="status done">Concluído</span>
+                </div>
+                <p class="desc">
+                  Suporte a equipe de elite da Azul Linhas aéreas em 2024, com
+                  foco em agilidade, precisão e resiliência sob pressão.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="section">
+            <h2>Experiências Profissionais</h2>
+            <div class="timeline">
+              <div class="item">
+                <h3>Desenvolvedor Web (WordPress) - Belport, São José</h3>
+                <div class="meta meta-row">
+                  Janeiro/2025 a Abril/2025
+                  <span class="status done">Concluído</span>
+                </div>
+                <p class="desc">
+                  Desenvolvimento e manutenção de site institucional em
+                  WordPress, com portfólio digital para apresentação de projetos
+                  e serviços.
+                </p>
+              </div>
+
+              <div class="item">
+                <h3>Editor de Vídeo (Freelance) - São José</h3>
+                <div class="meta meta-row">
+                  Janeiro/2023 a Janeiro/2025
+                  <span class="status done">Concluído</span>
+                </div>
+                <p class="desc">
+                  Edição e pós-produção de vídeos com Sony Vegas Pro, incluindo
+                  highlights, cortes, trilha sonora e exportação. Suporte com
+                  Filmora e After Effects.
+                </p>
+              </div>
+
+              <div class="item">
+                <h3>Editor de Fotos (Freelance) - São José</h3>
+                <div class="meta meta-row">
+                  Janeiro/2020 a Janeiro/2022
+                  <span class="status done">Concluído</span>
+                </div>
+                <p class="desc">
+                  Edição de imagens com Photoshop e GIMP, com ajustes de cor,
+                  recorte e manipulação de camadas para composições visuais.
+                </p>
+              </div>
+
+              <div class="item">
+                <h3>Projeto Inclusão Digital - Monitoria</h3>
+                <div class="meta meta-row">
+                  Atualmente participando
+                  <span class="status current">Atual</span>
+                </div>
+                <p class="desc">
+                  Apoio em atividades de inclusão digital, com orientações e
+                  acompanhamento de participantes.
+                </p>
+              </div>
+            </div>
+          </article>
+        </div>
       </section>
 
       <footer class="tools">
@@ -931,258 +985,4 @@
       </footer>
     </main>
   </body>
-</html>
-      }
-
-      .meta {
-        font-size: 0.67rem;
-      }
-
-      .desc {
-        font-size: 0.73rem;
-        line-height: 1.2;
-      }
-
-      .skill-level {
-        margin-bottom: 0.42rem;
-      }
-
-      .chip {
-        font-size: 0.68rem;
-        padding: 0.24rem 0.42rem;
-      }
-
-      .list {
-        font-size: 0.72rem;
-        line-height: 1.18;
-        break-inside: auto;
-        page-break-inside: auto;
-      }
-
-      .list li + li {
-        margin-top: 0.06rem;
-      }
-
-      .right .section {
-        margin-bottom: 0.24rem;
-      }
-
-      .right .section h2 {
-        margin-bottom: 0.26rem;
-      }
-
-      .right .list {
-        font-size: 0.68rem;
-        line-height: 1.12;
-        padding-left: 0.75rem;
-      }
-
-      .right .list li + li {
-        margin-top: 0.03rem;
-      }
-
-      .contact-chip {
-        background: rgba(255, 255, 255, 0.88);
-        border-color: rgba(146, 165, 186, 0.48);
-      }
-
-      .headline-badge {
-        background: rgba(255, 255, 255, 0.88);
-        border-color: rgba(133, 157, 181, 0.38);
-        color: #2b4a6c;
-      }
-
-      .age-badge {
-        background: rgba(255, 255, 255, 0.92);
-        border-color: rgba(111, 149, 188, 0.38);
-        color: #1e4368;
-      }
-
-      .social-links {
-        margin-top: 0.48rem;
-        flex-direction: row;
-        align-items: center;
-        gap: 0.3rem;
-      }
-
-      .social-btn {
-        display: inline-block;
-        color: #ffffff;
-        border: 1.5px solid transparent;
-        box-shadow: none;
-        padding: 0.34rem 0.52rem;
-        font-size: 0.74rem;
-      }
-
-      .social-btn.linkedin {
-        background: #0a66c2;
-        border-color: #0a66c2;
-      }
-
-      .social-btn.github {
-        background: #111827;
-        border-color: #111827;
-      }
-
-      .social-btn::after {
-        content: none;
-      }
-
-      .headline-badges {
-        margin-top: 0.42rem;
-      }
-
-      .headline-badge {
-        font-size: 0.64rem;
-        padding: 0.2rem 0.42rem;
-      }
-
-      .contact-grid {
-        margin-top: 0.5rem;
-        gap: 0.25rem;
-      }
-
-      .contact-chip {
-        padding: 0.2rem 0.42rem;
-        font-size: 0.7rem;
-      }
-
-      .age-badge {
-        padding: 0.3rem 0.55rem;
-        font-size: 0.72rem;
-      }
-    }
-  </style>
-</head>
-<body>
-  <main class="resume">
-    <header class="hero">
-      <div class="hero-top">
-        <div>
-          <h1>Leonardo Cassiano Bruchez Pereira</h1>
-          <p class="tagline">Estudante de Análise e Desenvolvimento de Sistemas em busca de estágio, com foco atual em Desenvolvimento Web e evolução para Dados e Nuvem.</p>
-          <div class="headline-badges">
-            <span class="headline-badge">Estágio em Tecnologia</span>
-            <span class="headline-badge">Desenvolvimento Web</span>
-            <span class="headline-badge">Dados e Nuvem</span>
-          </div>
-        </div>
-      </div>
-      <div class="contact-grid">
-        <div class="contact-chip"><strong>Email:</strong> bruchezleonardo@gmail.com</div>
-        <div class="contact-chip"><strong>Localização:</strong> São José - SC</div>
-        <div class="contact-chip"><strong>Idioma:</strong> Inglês - Intermediário</div>
-        <div class="contact-chip"><strong>Status:</strong> Disponível para estágio</div>
-      </div>
-      <div class="social-links">
-        <a class="social-btn linkedin" href="https://www.linkedin.com/in/leonardo-bruchez-280635356/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        <a class="social-btn github" href="https://github.com/LeonardoBruchez" target="_blank" rel="noopener noreferrer">GitHub</a>
-      </div>
-    </header>
-
-    <section class="content">
-      <div class="left">
-        <article class="section">
-          <h2>Perfil Profissional</h2>
-          <p>Estudante de Análise e Desenvolvimento de Sistemas em busca de estágio. Tenho foco atual em Desenvolvimento Web (HTML5, CSS3, JavaScript e Node.js), com boas práticas de código e segurança. Sou proativo, comprometido e orientado a resultados.</p>
-        </article>
-
-        <article class="section">
-          <h2>Objetivos</h2>
-          <p>Atuar em estágio em Desenvolvimento Web, contribuindo com interfaces modernas, código limpo e segurança. Como próximo passo de carreira, evoluir para Dados e Nuvem.</p>
-        </article>
-
-        <article class="section">
-          <h2>Experiências Profissionais</h2>
-          <div class="timeline">
-            <div class="item">
-              <h3>Desenvolvedor Web (WordPress) - Belport, São José</h3>
-              <div class="meta">Janeiro/2025 a Abril/2025</div>
-              <p class="desc">Desenvolvimento e manutenção de site institucional em WordPress, com portfólio digital para apresentação de projetos e serviços.</p>
-            </div>
-
-            <div class="item">
-              <h3>Editor de Vídeo (Freelance) - São José</h3>
-              <div class="meta">Janeiro/2023 a Janeiro/2025</div>
-              <p class="desc">Edição e pós-produção de vídeos com Sony Vegas Pro, incluindo highlights, cortes, trilha sonora e exportação. Suporte com Filmora e After Effects.</p>
-            </div>
-
-            <div class="item">
-              <h3>Editor de Fotos (Freelance) - São José</h3>
-              <div class="meta">Janeiro/2020 a Janeiro/2022</div>
-              <p class="desc">Edição de imagens com Photoshop e GIMP, com ajustes de cor, recorte e manipulação de camadas para composições visuais.</p>
-            </div>
-          </div>
-        </article>
-
-        <article class="section">
-          <h2>Cursos</h2>
-          <div class="timeline">
-            <div class="item">
-              <h3>Rocketseat - Trilha Fullstack</h3>
-              <div class="meta">Abril/2025</div>
-              <p class="desc">Base em HTML5, CSS3, JavaScript, Node.js e SQL, com mais de 1.100 aulas.</p>
-            </div>
-            <div class="item">
-              <h3>Curso HTML e CSS - Curso em Vídeo</h3>
-              <div class="meta">Abril/2025</div>
-              <p class="desc">Módulos 1, 2 e 3 completos.</p>
-            </div>
-            <div class="item">
-              <h3>Introduction to Cybersecurity - Cisco</h3>
-              <div class="meta">Março/2025</div>
-              <p class="desc">Identificação de ameaças, vulnerabilidades e práticas de segurança digital.</p>
-            </div>
-          </div>
-        </article>
-      </div>
-
-      <aside class="right">
-        <article class="section">
-          <h2>Formação</h2>
-          <div class="item">
-            <h3>Graduação: Análise e Desenvolvimento de Sistemas</h3>
-            <div class="meta">Centro Universitário Estácio de Santa Catarina - São José</div>
-            <p class="desc">Período: 1º | Turno: Noite</p>
-          </div>
-        </article>
-
-        <article class="section">
-          <h2>Certificações</h2>
-          <ul class="list">
-            <li>Introduction to Cybersecurity (Cisco) - Mar/2026</li>
-            <li>Fullstack (Rocketseat) - Mar/2026</li>
-            <li>Introdução ao Node.js (Rocketseat) - Fev/2026</li>
-            <li>JavaScript (Rocketseat) - Jan/2026</li>
-            <li>Curso de JavaScript e ECMAScript (Curso em Vídeo) - Nov/2025</li>
-            <li>Imersão IA (Alura) - Out/2025</li>
-            <li>Fundamentos de HTML e CSS (Rocketseat) - Set/2025</li>
-            <li>Git e GitHub (Rocketseat) - Jun/2025</li>
-            <li>Missão IA (Rocketseat) - Jun/2025</li>
-            <li>Imersão Dev Back-End (Alura) - Jan/2025</li>
-            <li>Lógica de Programação com JavaScript (Alura) - Nov/2024</li>
-          </ul>
-        </article>
-
-        <article class="section">
-          <h2>Informações Adicionais</h2>
-          <ul class="list">
-            <li>Interesse em arquitetura de sistemas, segurança cibernética, backend, frontend e redes</li>
-            <li>Entusiasta de hardware e otimização de sistemas</li>
-            <li>Inglês técnico médio para leitura de documentação</li>
-            <li>Experiência com VS Code, Git e GitHub</li>
-            <li>Perfil autodidata com foco em resolução de problemas</li>
-            <li>Interesse em Cloud Computing (AWS/Azure) e tecnologias emergentes</li>
-            <li>Conhecimento básico de Jupyter Notebook integrado com IA</li>
-          </ul>
-        </article>
-      </aside>
-    </section>
-
-    <footer class="tools">
-      <p class="note">Dica: no navegador, use Ctrl+P e escolha "Salvar como PDF".</p>
-      <button class="print-btn" onclick="window.print()">Imprimir / Salvar em PDF</button>
-    </footer>
-  </main>
-</body>
 </html>
