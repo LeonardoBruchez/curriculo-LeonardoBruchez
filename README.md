@@ -34,21 +34,21 @@ Ambos possuem o mesmo conteúdo principal, para facilitar leitura rápida no Git
 
 ## 🎯 Destaques Principais
 
-- 🌐 **Desenvolvimento Web** (HTML5, CSS3, JavaScript, Node.js)
+- 🌐 **Desenvolvimento Web** (HTML5, CSS3, JavaScript, Node.js, React)
 - 💼 **Estágio em Tecnologia**
-- 🚀 Evolução para **Dados e Nuvem**
+- 🔐 **Segurança da Informação**
 
 ---
 
 ## 📝 Perfil Profissional
 
-Profissional de 20 anos, estudante de Análise e Desenvolvimento de Sistemas em busca de estágio. Tenho foco atual em Desenvolvimento Web (HTML5, CSS3, JavaScript e Node.js), com boas práticas de código e segurança. Atualmente estou no aprendizado de React, com foco em React Router. Trago vivência em manutenção de aeronaves (aviônicos), o que reforça minha disciplina, capacidade de diagnóstico e soft skills em ambientes críticos.
+Estudante de Análise e Desenvolvimento de Sistemas, 20 anos, em busca de oportunidade de estágio na área de Tecnologia. Possuo conhecimentos em desenvolvimento de software, com experiência em HTML5, CSS3, JavaScript, Node.js e React, além de Git/GitHub e boas práticas de desenvolvimento. Atualmente, direciono parte dos meus estudos para Segurança da Informação, cursando Cybersecurity (FIAP Nano Courses) e aprofundando conhecimentos em TryHackMe, OWASP, vulnerabilidades e fundamentos de segurança aplicados ao desenvolvimento de software. Minha experiência anterior em manutenção de aeronaves (aviônicos) contribuiu para desenvolver disciplina, capacidade de diagnóstico, resolução de problemas, atenção aos detalhes e trabalho em ambientes críticos.
 
 ---
 
 ## 🎯 Objetivos Profissionais
 
-Atuar em estágio em Desenvolvimento Web, contribuindo com interfaces modernas, código limpo e segurança. Como próximo passo de carreira, evoluir para Dados e Nuvem.
+Atuar em estágio em Desenvolvimento Web, contribuindo com interfaces modernas, código limpo e boas práticas de segurança da informação. Como próximo passo de carreira, evoluir para Dados e Nuvem.
 
 ---
 
@@ -90,8 +90,8 @@ Edição de imagens com Photoshop e GIMP, com ajustes de cor, recorte e manipula
 
 ### 🤝 Projeto Inclusão Digital - Monitoria
 
-**Participando atualmente** | **Atual**
-Apoio em atividades de inclusão digital, com orientações e acompanhamento de participantes.
+**Abril/2026 - Julho/2026** | **Concluído**
+Apoio em atividades de inclusão digital, com orientações e acompanhamento de participantes, por cerca de 3 meses.
 
 ---
 
@@ -100,7 +100,7 @@ Apoio em atividades de inclusão digital, com orientações e acompanhamento de 
 ### Graduação: Análise e Desenvolvimento de Sistemas
 
 - **Instituição:** Centro Universitário Estácio de Santa Catarina - São José
-- **Status:** Cursando (1º período, Noite)
+- **Status:** Cursando (2º período, Noite)
 
 ### Curso Técnico: Manutenção de Aeronaves (Aviônicos)
 
@@ -111,16 +111,14 @@ Apoio em atividades de inclusão digital, com orientações e acompanhamento de 
 
 ## 📚 Cursos e Treinamentos
 
+- Cybersecurity (FIAP Nano Courses, 120h) - Em andamento desde Mai/2026
 - Introduction to Cybersecurity (Cisco) - Mar/2026
 - Fullstack (Rocketseat) - Mar/2026
 - Introdução ao Node.js (Rocketseat) - Fev/2026
 - JavaScript (Rocketseat) - Jan/2026
 - Curso de JavaScript e ECMAScript (Curso em Vídeo) - Nov/2025
-- Imersão IA (Alura) - Out/2025
 - Fundamentos de HTML e CSS (Rocketseat) - Set/2025
 - Git e GitHub (Rocketseat) - Jun/2025
-- Missão IA (Rocketseat) - Jun/2025
-- Imersão Dev Back-End (Alura) - Jan/2025
 - Lógica de Programação com JavaScript (Alura) - Nov/2024
 
 ---
@@ -151,6 +149,6 @@ Apoio em atividades de inclusão digital, com orientações e acompanhamento de 
 
 ---
 
-**Última atualização:** 10 de maio de 2026
+**Última atualização:** 20 de agosto de 2026
 
 _Este arquivo é mantido sincronizado com o currículo em HTML. Para atualizações, acesse o `index.html`._
